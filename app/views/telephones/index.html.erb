@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Telephones</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>first name</th>
+      <th>Phone no</th>
+      <th>Address</th>
+      <th>Lastname</th>
+      <th>Email id</th>
+      <th>Door no</th>
+      <th>Street</th>
+      <th>Area</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Country</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @telephones.each do |telephone| %>
+      <tr>
+        <td><%= telephone.first name %></td>
+        <td><%= telephone.phoneno %></td>
+        <td><%= telephone.address %></td>
+        <td><%= telephone.lastname %></td>
+        <td><%= telephone.email id %></td>
+        <td><%= telephone.doorno %></td>
+        <td><%= telephone.street %></td>
+        <td><%= telephone.area %></td>
+        <td><%= telephone.city %></td>
+        <td><%= telephone.state %></td>
+        <td><%= telephone.country %></td>
+        <td><%= link_to 'Show', telephone %></td>
+        <td><%= link_to 'Edit', edit_telephone_path(telephone) %></td>
+        <td><%= link_to 'Destroy', telephone, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Telephone', new_telephone_path %>

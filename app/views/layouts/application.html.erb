@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TeleApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+	<div class="content">
+		<div id="top">
+			<div class="topright">
+			 	<a href="#"><img src="assets/sitemap.png" alt="" /></a> 
+			 	<a href="#"><img src="assets/rss.png" alt="" /></a>				
+			</div>
+		</div>
+    <%= yield %>
+    
+		<div id="header">
+			
+			<div class="headings">
+				<h1>Telephone app</h1>
+				<h2>rails exercises</h2>
+			</div>
+		</div>
+    
+	
+			<div id="menu">
+			  	<ul>
+					<li><a href="#">first name</a></li>
+					<li><a href="#">phoneno</a></li>
+					<li><a href="#">address</a></li>
+					<li><a href="#">lastname</a></li>
+      				<li><a href="#">email id</a></li>
+      				<li><a href="#">door no</a></li>
+              <li><a href="#">street</a></li>
+              <li><a href="#">area</a></li>
+              <li><a href="#">city</a></li>
+              <li><a href="#">state</a></li>
+              <li><a href="#">country</a></li>
+      			</ul>
+			</div>	
+			
+     
+		<div id="main">
+			<div class="right">
+				
+				
+				<div class="nav">
+				
+					
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		<div id="footer">
+			<div class="info">
+				&copy; 2023
+        Telephone designn app <br />
+				
+		</div>
+	</div>
+	
+  
+  </body>
+</html>
